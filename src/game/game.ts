@@ -1,4 +1,4 @@
-/// <reference path="../lib/Phaser/Game.ts" />
+/// <reference path="../lib/Phaser/phaser.d.ts" />
 
 (function () {
     // Create game instance and connect init, create, update and render methods
@@ -15,14 +15,14 @@
     }
 
     function update() {
-        // What is your custom update logic?
+        // What is your custom update logic? 
     }
 
     function render() {
         // Replace with your own custom render logic
         myGame.stage.context.fillStyle = 'rgb(255,255,255)';
         myGame.stage.context.font = 'bold 18px Arial';
-        myGame.stage.context.fillText(Phaser.VERSION + " works!", myGame.stage.centerX - 120, myGame.stage.centerY);
+        myGame.stage.context.fillText(Phaser.VERSION + " totally works!", myGame.stage.centerX - 120, myGame.stage.centerY);
     }
 
 })();
